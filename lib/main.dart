@@ -1,24 +1,17 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: must_be_immutable, avoid_unnecessary_containers, use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutter_catalog/home_page.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-            child: Text("Welcome to Flutter!!!"),
-          ),
-        ),
-      ),
+      home: HomePage(),
     );
   }
 }
